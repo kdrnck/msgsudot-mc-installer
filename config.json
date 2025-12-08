@@ -1,0 +1,13 @@
+{
+  "javaPackageId": "EclipseAdoptium.Temurin.21.JDK",
+  "polyMcWingetId": "PolyMC.PolyMC",
+  "instanceUrl": "https://example.com/files/msgsu-dot-smp.zip",
+  "instanceName": "MSGSU-DOT SMP",
+  "polyMcSearchPaths": [
+    "%ProgramFiles%\\PolyMC\\polymc.exe",
+    "%ProgramFiles(x86)%\\PolyMC\\polymc.exe",
+    "%LocalAppData%\\Programs\\PolyMC\\polymc.exe"
+  ],
+  "minJavaMajorVersion": 21
+}
+
