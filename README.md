@@ -1,20 +1,21 @@
-# MSGSU-DOT SMP Windows Kurulum Scripti
+# MSGSU-DOT SMP Windows Setup Script
 
-Bu proje, tek bir PowerShell scriptiyle Java 21 (Temurin), PolyMC ve MSGSU-DOT SMP PolyMC instance importunu otomatik yapar. Kullanıcıya yalnızca PolyMC içinde hesap eklemek kalır.
+This project automates Java 21 (Temurin), PolyMC, and MSGSU-DOT SMP PolyMC instance import with a single PowerShell script. Only account setup inside PolyMC remains for the user.
 
-## Kullanım
-- Windows'ta `Install-MsgsuSmp.ps1` dosyasına sağ tık → **Run with PowerShell**.
-- Script Java ve PolyMC'yi kontrol eder, gerekirse winget ile kurar ve instance'ı PolyMC'ye import eder.
-- PolyMC açıldığında:
-  1) Accounts/Hesaplar bölümüne git.
-  2) "Add Microsoft" ile normal giriş yap veya mümkünse "Add offline account" ile nick ekle.
-  3) Sol menüde import edilen `MSGSU-DOT SMP` instance'ını seçip PLAY de.
+## Usage
+- Double-click: `Install-MsgsuSmp.cmd` (calls PowerShell with `Bypass`).
+- Alternative: right-click `Install-MsgsuSmp.ps1` → **Run with PowerShell**.
+- The script checks Java and PolyMC, installs via winget if needed, and imports the instance into PolyMC.
+- When PolyMC opens:
+  1) Go to Accounts.
+  2) Use "Add Microsoft" or, if allowed, "Add offline account".
+  3) In the left menu select the imported `MSGSU-DOT SMP` instance and press PLAY.
 
-## Geliştirici Notu (LLM ile çalışma)
-- Patch tarzı istekler verebilirsin, örn:  
-  - `Install-MsgsuSmp.ps1 içindeki Ensure-PolyMc fonksiyonuna X davranışını ekle`
-- Yapı:
-  - `config.json`: ayarlar
+## Dev note (LLM collaboration)
+- You can request patch-style changes, e.g.:  
+  - `Install-MsgsuSmp.ps1 dosyasindaki Ensure-PolyMc fonksiyonuna X davranisini ekle`
+- Structure:
+  - `config.json`: settings
   - `banner.txt`: ASCII banner
-  - `Install-MsgsuSmp.ps1`: ana script
+  - `Install-MsgsuSmp.ps1`: main script
 
